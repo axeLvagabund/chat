@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+</head>
+<style>
+	#chatForm {
+		display: none;
+	}
+</style>
+<body>
+	<form id='roomForm'>
+		<input type="text" id="roomName">
+		<button id="connect">connect</button>
+		<ul id="rooms"></ul>
+	</form>
+
+	<form id='chatForm'>
+		<div id="leaveFromRoom">Leave from room</div>
+		<input type="text" id='messageText'>
+		<button id='send'>send</button>
+		<ul id="messages"></ul>
+	</form>
+
+
+
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="client.js"></script>
+</body>
+</html>
